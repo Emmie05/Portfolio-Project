@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio-Project.git/static/css/main.d14f0fec.chunk.css",
-    "main.js": "/Portfolio-Project.git/static/js/main.8cb19037.chunk.js",
-    "main.js.map": "/Portfolio-Project.git/static/js/main.8cb19037.chunk.js.map",
-    "runtime-main.js": "/Portfolio-Project.git/static/js/runtime-main.d52bfb3c.js",
-    "runtime-main.js.map": "/Portfolio-Project.git/static/js/runtime-main.d52bfb3c.js.map",
-    "static/js/2.2503002b.chunk.js": "/Portfolio-Project.git/static/js/2.2503002b.chunk.js",
-    "static/js/2.2503002b.chunk.js.map": "/Portfolio-Project.git/static/js/2.2503002b.chunk.js.map",
-    "index.html": "/Portfolio-Project.git/index.html",
-    "precache-manifest.40c869ddc3201b5d60462ce9dad9d42e.js": "/Portfolio-Project.git/precache-manifest.40c869ddc3201b5d60462ce9dad9d42e.js",
-    "service-worker.js": "/Portfolio-Project.git/service-worker.js",
-    "static/css/main.d14f0fec.chunk.css.map": "/Portfolio-Project.git/static/css/main.d14f0fec.chunk.css.map",
-    "static/js/2.2503002b.chunk.js.LICENSE.txt": "/Portfolio-Project.git/static/js/2.2503002b.chunk.js.LICENSE.txt",
-    "static/media/ResistorColorCode.css": "/Portfolio-Project.git/static/media/color_code-night.fb2ddaf4.jpg",
-    "static/media/day.png": "/Portfolio-Project.git/static/media/day.24d7e35f.png",
-    "static/media/GPACalculator.css": "/Portfolio-Project.git/static/media/gpa-night.52fd494b.jpg",
-    "static/media/Home.css": "/Portfolio-Project.git/static/media/home-night.9baae802.jpg",
-    "static/media/logo-black.png": "/Portfolio-Project.git/static/media/logo-black.95dc3388.png",
-    "static/media/logo-white.png": "/Portfolio-Project.git/static/media/logo-white.922d0f65.png"
+    "main.css": "/Portfolio-Project/static/css/main.c24db816.chunk.css",
+    "main.js": "/Portfolio-Project/static/js/main.8cb19037.chunk.js",
+    "main.js.map": "/Portfolio-Project/static/js/main.8cb19037.chunk.js.map",
+    "runtime-main.js": "/Portfolio-Project/static/js/runtime-main.7b20fa7e.js",
+    "runtime-main.js.map": "/Portfolio-Project/static/js/runtime-main.7b20fa7e.js.map",
+    "static/js/2.2503002b.chunk.js": "/Portfolio-Project/static/js/2.2503002b.chunk.js",
+    "static/js/2.2503002b.chunk.js.map": "/Portfolio-Project/static/js/2.2503002b.chunk.js.map",
+    "index.html": "/Portfolio-Project/index.html",
+    "precache-manifest.01809b3d4406736f7f4a3d637319bea8.js": "/Portfolio-Project/precache-manifest.01809b3d4406736f7f4a3d637319bea8.js",
+    "service-worker.js": "/Portfolio-Project/service-worker.js",
+    "static/css/main.c24db816.chunk.css.map": "/Portfolio-Project/static/css/main.c24db816.chunk.css.map",
+    "static/js/2.2503002b.chunk.js.LICENSE.txt": "/Portfolio-Project/static/js/2.2503002b.chunk.js.LICENSE.txt",
+    "static/media/ResistorColorCode.css": "/Portfolio-Project/static/media/color_code-night.fb2ddaf4.jpg",
+    "static/media/day.png": "/Portfolio-Project/static/media/day.24d7e35f.png",
+    "static/media/GPACalculator.css": "/Portfolio-Project/static/media/gpa-night.52fd494b.jpg",
+    "static/media/Home.css": "/Portfolio-Project/static/media/home-night.9baae802.jpg",
+    "static/media/logo-black.png": "/Portfolio-Project/static/media/logo-black.95dc3388.png",
+    "static/media/logo-white.png": "/Portfolio-Project/static/media/logo-white.922d0f65.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d52bfb3c.js",
+    "static/js/runtime-main.7b20fa7e.js",
     "static/js/2.2503002b.chunk.js",
-    "static/css/main.d14f0fec.chunk.css",
+    "static/css/main.c24db816.chunk.css",
     "static/js/main.8cb19037.chunk.js"
   ]
 }
