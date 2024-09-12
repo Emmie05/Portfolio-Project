@@ -1,0 +1,244 @@
+.GpaCalculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  background-image: url('../../assets/gpa-day.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .GpaCalculator {
+  background-image: url('../../assets/gpa-night.jpg');
+  color: #fff;
+}
+
+.GPACalculatorContainer {
+  padding: 80px;
+  margin: 100px auto;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.gpa-header {
+  font-size: 1.7rem;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+
+.gpa-value {
+  font-size: 1.4rem;
+  margin: 1px auto;
+}
+
+.CoursesContainer {
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #fff transparent;
+  margin: 2px auto;
+  margin-bottom: 4px;
+}
+
+.CourseInput {
+  margin: 3px;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+select.Dropdown,
+select.creditDropdown {
+  padding: 6px 0px;
+  border-radius: 5px;
+  border: none;
+  margin: 2px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+select.creditDropdown:disabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ResultContainer {
+  padding: 3px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #000;
+  margin: 15px auto;
+}
+
+.btn-gpa1,
+.btn-gpa2 {
+  font-weight: bold;
+  margin: 12px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #032324;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-gpa1::after,
+.btn-gpa2::after {
+  content: '';
+  position: absolute;
+  height: 105%;
+  width: 102%;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right,#14237a, #0d383e);
+  z-index: -1;
+}
+
+.btn-gpa1:hover,
+.btn-gpa2:hover {
+  color: #fff;
+  z-index: 0;
+  box-shadow: 40px 0 100px #7987cbde, -40px 0 100px #9575cdda;
+}
+
+.btn-gpa1:active {
+  transform: scale(0.9);
+}
+
+.dark .btn-gpa1::after,
+.dark .btn-gpa2::after {
+  background-image: linear-gradient(to bottom right, #0d1213, #0e0e0f);
+  color: #eae1ff;
+}
+.dark .btn-gpa1:hover,
+.dark .btn-gpa2:hover {
+  box-shadow: 40px 0 100px #1f292abe, -40px 0 100px #000101cb;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .GPACalculatorContainer {
+    padding: 35px;
+    margin: 50px;
+  }
+
+  .gpa-header {
+    font-size: 1.4rem;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+
+  .gpa-value {
+    font-size: 1.1rem;
+  }
+
+  select.Dropdown,
+  select.creditDropdown {
+    padding: 5px 3px;
+    margin: 3px;
+  }
+
+  .btn-gpa1,
+  .btn-gpa2 {
+    margin: 10px;
+    padding: 8px 15px;
+  }
+
+  .CourseInput {
+    margin: 3px;
+    padding: 5px 3px;
+  }
+}
+
+/* Additional Media Query for Screen Width 600px */
+@media (max-width: 600px) {
+  .GPACalculatorContainer {
+    padding: 25px;
+    margin: 40px;
+  }
+
+  .gpa-header {
+    font-size: 1.3rem;
+    margin-top: 3px;
+    margin-bottom: 8px;
+  }
+
+  .gpa-value {
+    font-size: 1rem;
+  }
+
+  .CoursesContainer {
+    max-height: 290px;
+    margin: 20px;
+  }
+
+  select.Dropdown,
+  select.creditDropdown {
+    padding: 6px 1px;
+    margin: 2px;
+  }
+  .CourseInput {
+    margin: 2px;
+    padding: 6px 2px;
+  }
+
+  .btn-gpa1,
+  .btn-gpa2 {
+    margin: 8px;
+    padding: 6px 12px;
+  }
+}
+
+/* Additional Media Query for Screen Width 480px */
+@media (max-width: 480px) {
+  .GPACalculatorContainer {
+    padding: 20px;
+    margin: 30px;
+  }
+
+  .gpa-header {
+    font-size: 1.1rem;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+
+  .gpa-value {
+    font-size: 1rem;
+  }
+
+  .CoursesContainer {
+    max-height: 270px;
+  }
+
+  select.Dropdown,
+  select.creditDropdown {
+    padding: 3px 1px;
+    margin: 2px;
+  }
+  .CourseInput {
+    width: 110px;
+    height: 22px;
+    margin: 2px;
+  }
+
+  .btn-gpa1,
+  .btn-gpa2 {
+    margin: 8px;
+    padding: 5px 10px;
+  }
+}

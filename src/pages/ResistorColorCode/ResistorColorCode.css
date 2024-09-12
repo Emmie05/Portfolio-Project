@@ -1,0 +1,251 @@
+/* Light Theme */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    background-image: url('../../assets/color_code-day.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.dark .calculator {
+    background-image: url('../../assets/color_code-night.jpg'); 
+}
+
+.ResistorColorCodeContainer {
+    padding: 70px;
+    margin: 40px ;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.Head {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.dark .Head {
+    color: #fff;
+}
+
+.dark .answer {
+    color: #fff;
+    background: none;
+}
+
+.answer {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin: 10px auto;
+    background-color: #000;
+}
+
+.ResistorImage {
+    width: 230px;
+    height: 45px;
+    margin: 25px auto;
+    background: #d5d2d2d3;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.band {
+    width: 18px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 4px;
+}
+
+select.Dropdown {
+    margin: 5px;
+    padding: 6px 2px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.ResultContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.btn-colorCode {
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #032324;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-colorCode::after {
+    content: '';
+    position: absolute;
+    height: 105%;
+    width: 102%;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #3b3b3b, #ffffff);
+    z-index: -1;
+}
+
+.btn-colorCode:hover {
+    color: #ffffff;
+    z-index: 0;
+    box-shadow: 40px 0 100px #4f5b63bf, -40px 0 100px #2f2929da;
+}
+
+.btn-colorCode:active {
+    transform: scale(0.9);
+}
+.dark .btn-colorCode::after {
+    background-image: linear-gradient(to bottom right, #0d1213, #0e0e0f);
+    color: #eae1ff; 
+}
+.dark .btn-colorCode:hover {
+    box-shadow: 40px 0 100px #1f292abe, -40px 0 100px #000101cb;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .ResistorColorCodeContainer {
+        padding: 60px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .Head {
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .answer {
+        font-size: 1.2rem;
+        margin: 5px auto;
+    }
+
+    .ResistorImage {
+        width: 200px;
+        height: 35px;
+        margin: 15px auto;
+    }
+
+    .band {
+        width: 12px;
+    }
+    select.Dropdown {
+        margin: 4px;
+        padding: 4px 2px;
+    }
+
+    .btn-colorCode {
+        margin: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Additional Media Query for Screen Width 600px */
+@media (max-width: 600px) {
+    .ResistorColorCodeContainer {
+        padding: 50px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .Head {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .answer {
+        font-size: 1rem;
+        margin: 4px auto;
+    }
+
+    .ResistorImage {
+        width: 170px;
+        height: 30px;
+        margin: 12px auto;
+    }
+
+    .band {
+        width: 10px;
+    }
+    select.Dropdown {
+        margin: 5px 3px;
+        padding: 3px 2px;
+    }
+
+    .btn-colorCode {
+        margin: 10px;
+        padding: 6px 12px;
+    }
+}
+
+/* Additional Media Query for Screen Width 480px */
+@media (max-width: 480px) {
+    .ResistorColorCodeContainer {
+        padding: 40px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .Head {
+        font-size: 1rem;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .answer {
+        font-size: 0.9rem;
+        margin: 3px auto;
+    }
+
+    .ResistorImage {
+        width: 140px;
+        height: 25px;
+        margin: 10px auto;
+    }
+
+    .band {
+        width: 8px;
+        border-radius: 3px;
+    }
+    select.Dropdown {
+        padding: 5px 1.5px;
+        margin: 4px 1px;
+        font-size: 0.75rem;
+    }
+
+    .btn-colorCode {
+        margin: 6px;
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+}
