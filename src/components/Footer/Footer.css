@@ -1,25 +1,28 @@
+/* Container for the footer */
 .FooterContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
     width: 100%;
     padding: 10px 0;
-    position: fixed;
+    position: fixed; /* Fixed at the bottom */
     bottom: 0;
-    z-index: 1000;
+    z-index: 1000; /* High z-index to stay on top */
     font-size: 0.8rem;
     font-weight: 500;
     text-align: center;
 }
 
+/* Dark mode styles for the footer */
 .dark .FooterContainer {
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
 }
 
+/* Container for social links */
 .SocialLinks {
     display: flex;
     justify-content: center;
@@ -28,27 +31,31 @@
     margin-left: 10px;
 }
 
+/* Styles for social link anchors */
 .SocialLinks a {
     margin: 0 7px;
-    color: #000;
+    color: #000; /* Black text */
     font-size: 1.4rem;
-    transition: transform 0.3s, color 0.3s;
+    transition: transform 0.3s, color 0.3s; /* Smooth transition */
 }
 
+/* Hover effect for social link anchors */
 .SocialLinks a:hover {
-    transform: scale(1.1);
-    color: #007bff;
+    transform: scale(1.1); /* Slightly enlarge */
+    color: #007bff; /* Change color to blue */
 }
 
+/* Dark mode styles for social link anchors */
 .dark .SocialLinks a {
-    color: #fff;
+    color: #fff; /* White text */
 }
 
+/* Hover effect for social link anchors in dark mode */
 .dark .SocialLinks a:hover {
-    color: #007bff;
+    color: #007bff; /* Change color to blue */
 }
 
-/* Media Query for Smaller Screens */
+/* Responsive styles for screens with max-width 768px */
 @media screen and (max-width: 768px) {
     .FooterContainer {
         font-size: 0.7rem;
@@ -61,7 +68,7 @@
     }
 }
 
-/* Additional Media Query for Screen Width 600px */
+/* Responsive styles for screens with max-width 600px */
 @media screen and (max-width: 600px) {
     .FooterContainer {
         font-size: 0.65rem;
@@ -74,7 +81,7 @@
     }
 }
 
-/* Additional Media Query for Screen Width 480px */
+/* Responsive styles for screens with max-width 480px */
 @media screen and (max-width: 480px) {
     .FooterContainer {
         font-size: 0.6rem;
