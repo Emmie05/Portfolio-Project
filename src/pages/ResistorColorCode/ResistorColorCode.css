@@ -1,4 +1,4 @@
-/* Light Theme */
+/* Container for the calculator */
 .calculator {
     display: flex;
     flex-direction: column;
@@ -10,13 +10,15 @@
     background-position: center;
 }
 
+/* Dark mode styles for the calculator */
 .dark .calculator {
     background-image: url('../../assets/color_code-night.jpg'); 
 }
 
+/* Container for the resistor color code section */
 .ResistorColorCodeContainer {
     padding: 70px;
-    margin: 40px ;
+    margin: 40px;
     text-align: center;
     border: 2px solid rgba(255, 255, 255, 0.18);
     border-radius: 15px;
@@ -25,6 +27,7 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
+/* Header styles */
 .Head {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -32,15 +35,18 @@
     color: #000;
 }
 
+/* Dark mode styles for the header */
 .dark .Head {
     color: #fff;
 }
 
+/* Dark mode styles for the answer section */
 .dark .answer {
     color: #fff;
     background: none;
 }
 
+/* Answer section styles */
 .answer {
     color: #ffffff;
     font-size: 1.4rem;
@@ -48,6 +54,7 @@
     background-color: #000;
 }
 
+/* Styles for the resistor image */
 .ResistorImage {
     width: 230px;
     height: 45px;
@@ -60,6 +67,7 @@
     align-items: center;
 }
 
+/* Styles for the color bands on the resistor */
 .band {
     width: 18px;
     height: 100%;
@@ -68,6 +76,7 @@
     border-radius: 4px;
 }
 
+/* Styles for the dropdown select element */
 select.Dropdown {
     margin: 5px;
     padding: 6px 2px;
@@ -75,6 +84,7 @@ select.Dropdown {
     border: 1px solid #cccccc;
 }
 
+/* Container for the result section */
 .ResultContainer {
     margin-top: 20px;
     display: flex;
@@ -82,12 +92,14 @@ select.Dropdown {
     align-items: center;
 }
 
+/* Button container styles */
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;   
 }
 
+/* Styles for the color code button */
 .btn-colorCode {
     font-weight: bold;
     margin: 20px;
@@ -103,6 +115,7 @@ select.Dropdown {
     align-items: center;
 }
 
+/* Pseudo-element for the button background */
 .btn-colorCode::after {
     content: '';
     position: absolute;
@@ -113,24 +126,30 @@ select.Dropdown {
     z-index: -1;
 }
 
+/* Hover state for the color code button */
 .btn-colorCode:hover {
     color: #ffffff;
     z-index: 0;
     box-shadow: 40px 0 100px #4f5b63bf, -40px 0 100px #2f2929da;
 }
 
+/* Active state for the color code button */
 .btn-colorCode:active {
     transform: scale(0.9);
 }
+
+/* Dark mode styles for the button pseudo-element */
 .dark .btn-colorCode::after {
     background-image: linear-gradient(to bottom right, #0d1213, #0e0e0f);
     color: #eae1ff; 
 }
+
+/* Dark mode hover state for the color code button */
 .dark .btn-colorCode:hover {
     box-shadow: 40px 0 100px #1f292abe, -40px 0 100px #000101cb;
 }
 
-/* Media Query for Smaller Screens */
+/* Responsive styles for screens with max-width of 768px */
 @media (max-width: 768px) {
     .ResistorColorCodeContainer {
         padding: 60px;
@@ -158,6 +177,7 @@ select.Dropdown {
     .band {
         width: 12px;
     }
+
     select.Dropdown {
         margin: 4px;
         padding: 4px 2px;
@@ -169,7 +189,7 @@ select.Dropdown {
     }
 }
 
-/* Additional Media Query for Screen Width 600px */
+/* Responsive styles for screens with max-width of 600px */
 @media (max-width: 600px) {
     .ResistorColorCodeContainer {
         padding: 50px;
@@ -197,6 +217,7 @@ select.Dropdown {
     .band {
         width: 10px;
     }
+
     select.Dropdown {
         margin: 5px 3px;
         padding: 3px 2px;
@@ -208,7 +229,7 @@ select.Dropdown {
     }
 }
 
-/* Additional Media Query for Screen Width 480px */
+/* Responsive styles for screens with max-width of 480px */
 @media (max-width: 480px) {
     .ResistorColorCodeContainer {
         padding: 40px;
@@ -237,6 +258,7 @@ select.Dropdown {
         width: 8px;
         border-radius: 3px;
     }
+
     select.Dropdown {
         padding: 5px 1.5px;
         margin: 4px 1px;
