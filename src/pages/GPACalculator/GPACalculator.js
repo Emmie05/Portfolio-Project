@@ -1,6 +1,49 @@
 import React, { useState } from 'react';
 import './GPACalculator.css';
 
+/**
+ * GPACalculator component allows users to input their courses, credits, and grades to calculate their GPA.
+ * 
+ * @component
+ * @example
+ * return (
+ *   <GPACalculator />
+ * )
+ * 
+ * @returns {JSX.Element} The GPA Calculator component.
+ * 
+ * @typedef {Object} Course
+ * @property {string} name - The name of the course.
+ * @property {number} credits - The number of credits for the course.
+ * @property {string} grade - The grade received for the course.
+ * 
+ * @typedef {Object} GradeValues
+ * @property {number} A - Grade value for A.
+ * @property {number} B+ - Grade value for B+.
+ * @property {number} B - Grade value for B.
+ * @property {number} B- - Grade value for B-.
+ * @property {number} C+ - Grade value for C+.
+ * @property {number} C - Grade value for C.
+ * @property {number} C- - Grade value for C-.
+ * @property {number} D - Grade value for D.
+ * @property {number} E - Grade value for E.
+ * @property {number} F - Grade value for F.
+ * 
+ * @function handleCourseChange
+ * @description Handles the change in course input fields.
+ * @param {number} index - The index of the course being changed.
+ * @param {string} field - The field of the course being changed (name, credits, grade).
+ * @param {string|number} value - The new value for the field.
+ * 
+ * @function addCourse
+ * @description Adds a new course input field.
+ * 
+ * @function calculateGpa
+ * @description Calculates the GPA based on the courses, credits, and grades inputted.
+ * 
+ * @state {Course[]} courses - The list of courses inputted by the user.
+ * @state {number|null} gpa - The calculated GPA.
+ */
 const GPACalculator = () => {
   const [courses, setCourses] = useState([{ name: '', credits: '', grade: 'A' }]);
   const [gpa, setGpa] = useState(null);
