@@ -2,6 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+/**
+ * Home component renders the main page of the Portfolio Project.
+ * It includes a title, description, and links to various tools.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Home />
+ * )
+ */
 const Home = () => {
   return (
     <div className='HomeContainer'>
