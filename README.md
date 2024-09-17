@@ -1,6 +1,9 @@
-# Portfolio Project: Interactive Resistor Color Code Generator and GPA Calculator
+# Portfolio Project: Interactive Resistor Color Code Generator and GPA Calculator 🎓📏
 
 This portfolio project is a web application toolkit that contains two main features: a GPA calculator and a resistor color code resistance generator. The goal of this project is to provide users with useful tools to calculate their GPA and determine resistor values based on color codes.
+
+#### [Deployed Site](https://emm-adams.codes/Portfolio-Project/)
+
 
 ## Features
 
@@ -29,6 +32,13 @@ This portfolio project is a web application toolkit that contains two main featu
 - **React**: For building the user interface.
 - **React Router**: For navigation between different components.
 - **CSS**: For styling the application.
+
+## Motivation & Vision 🌱
+As both an Electrical & Electronic Engineering student and an aspiring Software Developer, I built this project to merge two of my key areas of interest: education and electronics. The GPA calculator is designed to help students like myself quickly assess academic performance, while the resistor color code generator addresses a common task in circuit design.
+
+Initially, I faced challenges when integrating the React Router for seamless navigation between components, but overcoming this taught me valuable lessons in state management and routing.
+
+Future iterations of the project could include additional calculators and a user dashboard for saving progress.
 
 ## Getting Started
 
@@ -80,9 +90,7 @@ This portfolio project is a web application toolkit that contains two main featu
     ├── package.json
     ├── README.md
 
-## Deployment
-To deploy this project, you can use any static site hosting service like Vercel, Netlify, or GitHub Pages.
 
 ## Contact
-    Developer: Emmanuel Forster
-    Email: emmvicadforster@gmail.com
+ - [LinkedIn](https://www.linkedin.com/in/emmanuel-forster-3ab072296)
+- [Email](emmvicadforster@gmail.com)
