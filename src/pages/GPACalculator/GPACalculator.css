@@ -1,3 +1,4 @@
+/* Main container for GPA Calculator */
 .GpaCalculator {
   display: flex;
   flex-direction: column;
@@ -9,11 +10,13 @@
   background-position: center;
 }
 
+/* Dark mode styles for GPA Calculator */
 .dark .GpaCalculator {
   background-image: url('../../assets/gpa-night.jpg');
   color: #fff;
 }
 
+/* Container for GPA Calculator content */
 .GPACalculatorContainer {
   padding: 80px;
   margin: 100px auto;
@@ -25,17 +28,20 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
+/* Header for GPA value */
 .gpa-header {
   font-size: 1.7rem;
   margin-top: 3px;
   margin-bottom: 15px;
 }
 
+/* Display for GPA value */
 .gpa-value {
   font-size: 1.4rem;
   margin: 1px auto;
 }
 
+/* Container for course inputs */
 .CoursesContainer {
   max-height: 300px;
   overflow-y: scroll;
@@ -45,6 +51,7 @@
   margin-bottom: 4px;
 }
 
+/* Input fields for courses */
 .CourseInput {
   margin: 3px;
   padding: 6px 8px;
@@ -52,6 +59,7 @@
   border-radius: 5px;
 }
 
+/* Dropdown styles */
 select.Dropdown,
 select.creditDropdown {
   padding: 6px 0px;
@@ -63,10 +71,12 @@ select.creditDropdown {
   cursor: pointer;
 }
 
+/* Disabled state for credit dropdown */
 select.creditDropdown:disabled {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* Container for result display */
 .ResultContainer {
   padding: 3px auto;
   display: flex;
@@ -74,6 +84,7 @@ select.creditDropdown:disabled {
   align-items: center;
 }
 
+/* Button container */
 .btn {
   display: flex;
   justify-content: center;
@@ -82,6 +93,7 @@ select.creditDropdown:disabled {
   margin: 15px auto;
 }
 
+/* Styles for GPA buttons */
 .btn-gpa1,
 .btn-gpa2 {
   font-weight: bold;
@@ -98,6 +110,7 @@ select.creditDropdown:disabled {
   align-items: center;
 }
 
+/* Gradient background for GPA buttons */
 .btn-gpa1::after,
 .btn-gpa2::after {
   content: '';
@@ -109,6 +122,7 @@ select.creditDropdown:disabled {
   z-index: -1;
 }
 
+/* Hover effect for GPA buttons */
 .btn-gpa1:hover,
 .btn-gpa2:hover {
   color: #fff;
@@ -116,15 +130,19 @@ select.creditDropdown:disabled {
   box-shadow: 40px 0 100px #7987cbde, -40px 0 100px #9575cdda;
 }
 
+/* Active state for GPA button 1 */
 .btn-gpa1:active {
   transform: scale(0.9);
 }
 
+/* Dark mode styles for GPA buttons */
 .dark .btn-gpa1::after,
 .dark .btn-gpa2::after {
   background-image: linear-gradient(to bottom right, #0d1213, #0e0e0f);
   color: #eae1ff;
 }
+
+/* Hover effect for GPA buttons in dark mode */
 .dark .btn-gpa1:hover,
 .dark .btn-gpa2:hover {
   box-shadow: 40px 0 100px #1f292abe, -40px 0 100px #000101cb;
