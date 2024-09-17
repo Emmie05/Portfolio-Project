@@ -1,6 +1,44 @@
 import React, { useState } from 'react';
 import './ResistorColorCode.css';
 
+/**
+ * ResistorColorCode component calculates and displays the resistance of a resistor based on the color bands selected.
+ * 
+ * @component
+ * @example
+ * return (
+ *   <ResistorColorCode />
+ * )
+ * 
+ * @returns {JSX.Element} The ResistorColorCode component.
+ * 
+ * @description
+ * The component maintains the state of the selected colors for the resistor bands and calculates the resistance value 
+ * based on these colors. It provides dropdowns for selecting the colors of the bands and a button to trigger the 
+ * resistance calculation. The calculated resistance is displayed along with its tolerance.
+ * 
+ * @function
+ * @name ResistorColorCode
+ * 
+ * @property {Object} colors - The state object containing the selected colors for the resistor bands.
+ * @property {string} colors.band1 - The color of the first band.
+ * @property {string} colors.band2 - The color of the second band.
+ * @property {string} colors.multiplier - The color of the multiplier band.
+ * @property {string} colors.tolerance - The color of the tolerance band.
+ * 
+ * @property {number|null} resistance - The state variable holding the calculated resistance value.
+ * 
+ * @property {Object} colorCodes - The object mapping color names to their corresponding digit values.
+ * @property {Object} toleranceCodes - The object mapping color names to their corresponding tolerance values.
+ * 
+ * @method handleColorChange
+ * @description Updates the color of a specified band.
+ * @param {string} band - The band to update (band1, band2, multiplier, tolerance).
+ * @param {string} color - The new color for the specified band.
+ * 
+ * @method calculateResistance
+ * @description Calculates the resistance value based on the selected colors and updates the resistance state.
+ */
 const ResistorColorCode = () => {
   const [colors, setColors] = useState({
     band1: 'black',
